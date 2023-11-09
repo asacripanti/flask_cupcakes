@@ -3,42 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Space+Mono&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    <h1>Cupcakes</h1>
+<section class="bodyShell">
+    <section id="cupcakesList">
+        <form action="" id="newCupcakeForm">
+            <h2>New Cupcake</h2>  
+            <div class="divShell">
+                <label for="form_flavor"></label>
+                <input class="formFlavor" type="text" id="form_flavor" name="flavor" placeholder="Flavor">
+            </div>
+        
+            <div class="divShell">
+                <label for="form_size"></label>
+                <input class="formSize" type="text" id="form_size" name="size" placeholder="Size">
+            </div>
+           
+            <div class="divShell">
+                <label for="form_rating"></label>
+                <input class="formRating" type="number" id="form_rating" name="rating" placeholder="Rating">
+            </div>
+        
+            <div class="divShell">
+                <label for="form_image"></label>
+                <input class="formImg" type="text" id="form_image" name="image" placeholder="Image">
+            </div>
+          
+            <button>Submit</button>
+        </form>
 
-    <ul id="cupcakesList">
-
-    </ul>
-
-<h2>New Cupcake</h2>    
-
-<form action="" id="newCupcakeForm">
-    <div>
-        <label for="form_flavor">Flavor: </label>
-        <input type="text" id="form_flavor" name="flavor">
-    </div>
-
-    <div>
-        <label for="form_size">Size: </label>
-        <input type="text" id="form_size" name="size">
-    </div>
-   
-    <div>
-        <label for="form_rating">Rating: </label>
-        <input type="number" id="form_rating" name="rating">
-    </div>
-
-    <div>
-        <label for="form_image">Image: </label>
-        <input type="text" id="form_image" name="image">
-    </div>
-  
-    <button>Submit</button>
-</form>
-    
-
+    </section>
+</section>
+ 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>    
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="/static/cupcakes.js"></script>

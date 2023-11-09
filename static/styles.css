@@ -1,0 +1,120 @@
+body{
+    background-color: #B8D4E3;
+    display: flex;
+    justify-content: center;
+}
+
+.bodyShell{
+    background-color: #EEFFDB;
+    width: 1600px;
+    height: 1200px;
+    flex-wrap: wrap;
+}
+
+#newCupcakeForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border: solid 1px plum;
+    background-color: #FFD9CE;
+}
+
+input::placeholder{
+    color: #7DCFB6;
+}
+
+input{
+    /* background-color: ; */
+}
+
+button{
+    border-radius: 10px;
+}
+
+.rating_sizeShell{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    height: 90px;
+}
+
+.ratingContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 50px;
+    width: 50px;
+    background-color: goldenrod;
+    border-radius: 26px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+}
+
+.cupcakeShell, #newCupcakeForm{
+    width: 350px;
+    height: 275px;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7); 
+    border-radius: 16px;
+}
+
+.cupcakeShell{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px lightslategray;
+    border-radius: 16px;
+    background-color: white;
+}
+
+.divShell{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.divShell > input{
+    border-radius: 5px;
+}
+
+.formFlavor, .formSize, .formRating, .formImg{
+    width: 80%;
+} 
+
+#cupcakesList{
+    display: flex;
+    justify-content: space-between;
+    background-color: #FB6376;  
+    width: 100%;
+    /* height: 1000px; */
+
+}
+
+
+.delete-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 24px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: red;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7); 
+}
+
+.delete-button:hover{
+    cursor: pointer;
+}
+
+
+.cupcakeImg{
+    width: 140px;
+    height: 140px;
+    border: solid 1px black;
+}
